@@ -1,0 +1,29 @@
+DPB Core:
+en
+conf t
+interface vlan38
+ip access-group DBP_GUEST_IN in
+end
+
+BHTQ Core:
+en
+conf t
+interface vlan48
+ip access-group BHTQ_GUEST_IN in
+end
+
+HCMC
+
+A:
+en
+conf t
+interface vlan18
+ip access-group A_GUEST_IN in
+end
+
+B:
+en
+conf t
+interface vlan28
+ip access-group B_GUEST_IN in
+end
